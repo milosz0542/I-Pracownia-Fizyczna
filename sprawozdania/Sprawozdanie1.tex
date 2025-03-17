@@ -1,0 +1,304 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{wrapfig}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+
+
+
+%\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[includeheadfoot,
+            left=1in,
+            right=1in,
+            top=1cm,
+            bottom=1cm,
+            headheight=1cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{}  
+\renewcommand{\headrulewidth}{0pt}  
+\renewcommand{\footrulewidth}{0pt}  
+
+\def\justifying{%
+  \rightskip=0pt
+  \spaceskip=0pt
+  \xspaceskip=0pt
+  \relax
+}
+
+\fancypagestyle{firstpage}
+{
+    \fancyhead[L]       % <-----------------LEWA STRONA-----------------
+        {
+     
+            \vspace{0.25cm}            
+            \textbf{\textit{Miłosz Grześkowiak}} \\
+            {\textit{Rok 1/S2 - Informatyka Stosowana i Systemy Pomiarowe}} \\
+            {\textit{06 Marca 2025}} \\
+        }
+
+        
+    \fancyhead[R]   % <---------------------PRAWA STRONA------------
+        {
+         
+             \vspace{0.25cm}
+             \textit{06 Marca 2025}  \\ 
+             {Prowadząca: } \\ 
+             {\textit{dr. Sylwia Owczarek}} \\  
+        
+        }
+}
+\begin{document}
+\textbf{ }\\
+\textbf{ }\\
+\thispagestyle{firstpage}
+\centering
+\section*{Ćwiczenie nr. 1}
+\subsection*{Temat: Dokładność pomiaru długości}
+\textbf{ }\\
+\textbf{ }\\
+\textbf{ }\\
+\textbf{ }\\
+\begin{tabularx}{1\textwidth} { 
+  | >{\centering\arraybackslash}X |     % 1  }
+  | >{\centering\arraybackslash}X |     % 2  }
+  | >{\centering\arraybackslash}X |
+  | >{\centering\arraybackslash}X |
+  | >{\centering\arraybackslash}X |
+  | >{\centering\arraybackslash}X |
+  | >{\centering\arraybackslash}X |
+  | >{\centering\arraybackslash}X |
+  | >{\centering\arraybackslash}X |% 3  }   LICZBA 
+  | >{\centering\arraybackslash}X |}    % 4  }   KOLUMN
+ \hline
+
+
+ %---------------------------OPIS-------------------------------
+ \# 
+ & 1. długość boku a kostki mierzona linijką [mm]
+ & 2. długość boku b kostki mierzona linijką [mm]
+ & 3. długość boku c kostki mierzona linijką [mm]
+ & 4. długość boku a kostki mierzona suwmiarką [mm]
+ & 5. długość boku b kostki mierzona suwmiarką [mm]
+ & 6. długość boku c kostki mierzona suwmiarką [mm]
+ & 7. długość boku a kostki mierzona mikrometrem [mm]
+ & 8. długość boku b kostki mierzona mikrometrem [mm]
+ & 9. długość boku c kostki mierzona mikrometrem [mm] \\
+%---------------------------OPIS-------------------------------
+
+ 
+\hline
+\hline
+%---------------------------DANE-------------------------------
+\hline 1 & 14 & 14 & 14 & 14.45 & 14.50 & 14.45 & 14.62 & 14.74 & 14.75 \\
+\hline 2 & 14 & 14 & 14 & 14.50 & 14.45 & 14.40 & 14.64 & 14.76 & 14.63 \\
+\hline 3 & 14 & 14 & 14 & 14.40 & 14.40 & 14.40 & 14.65 & 14.76 & 14.60 \\
+%---------------------------DANE-------------------------------
+\hline
+\end{tabularx}
+
+\textbf{ }\\
+
+
+\raggedright
+    {
+        {Dokładność wartości z pomiaru 1-3} \\
+        {$\Delta_1 = \pm1 mm$}\\
+        \textbf{ }\\
+        {Dokładność wartości z pomiaru 4-6} \\
+        {$\Delta_2 = \pm0.05 mm$}\\
+        \textbf{ }\\
+        {Dokładność wartości z pomiaru 7-9} \\
+        {$\Delta_3 = \pm0.01 mm$}\\
+        \textbf{ }\\
+    }
+
+\begin{tabularx}{1\textwidth} { 
+  | >{\centering\arraybackslash}X |     % 1  }
+  | >{\centering\arraybackslash}X |     % 2  }
+  | >{\centering\arraybackslash}X |
+  | >{\centering\arraybackslash}X |
+  | >{\centering\arraybackslash}X |}    % 4  }   KOLUMN
+ \hline
+
+
+ %---------------------------OPIS-------------------------------
+ \# 
+ & 1. promień zewnętrzny pierścienia mierzony linijką [mm]
+ & 2. promień wewnętrzny pierścienia mierzony linijką [mm]
+ & 3. promień zewnętrzny pierścienia mierzony suwmiarką [mm]
+ & 4. promień wewnętrzny pierścienia mierzony suwmiarką [mm] \\
+%---------------------------OPIS-------------------------------
+
+ 
+\hline
+\hline
+%---------------------------DANE-------------------------------
+\hline 1 & 15 & 9 & 15.30 & 9.00 \\
+\hline 2 & 15 & 9 & 15.40 & 8.70 \\
+\hline 3 & 15 & 9 & 15.50 & 9.00 \\
+\hline 4 & 15 & 9 & 15.50 & 8.40 \\
+\hline 5 & 15 & 9 & 15.45 & 9.00 \\
+%---------------------------DANE-------------------------------
+\hline
+\end{tabularx}
+
+\textbf{} \\
+
+\raggedright
+    {
+        {Dokładność wartości z pomiaru 1-2} \\
+        {$\Delta_1 = \pm1 mm$}\\
+        \textbf{ }\\
+        {Dokładność wartości z pomiaru 3-4} \\
+        {$\Delta_2 = \pm0.05 mm$}\\
+        \textbf{ }\\
+    }
+
+\begin{tabularx}{1\textwidth} { 
+  | >{\centering\arraybackslash}X |     % 1  }
+  | >{\centering\arraybackslash}X |     % 2  }
+  | >{\centering\arraybackslash}X |}    % 3  }   KOLUMN
+ \hline
+
+
+ %---------------------------OPIS-------------------------------
+ \# 
+ & 1. wysokość walca mierzona suwmiarką [mm]
+ & 2. średnica walca mierozona mikrometrem [mm] \\
+%---------------------------OPIS-------------------------------
+
+ 
+\hline
+\hline
+%---------------------------DANE-------------------------------
+\hline 1 & 30.70 & 5.93 \\
+\hline 2 & 30.60 & 5.95 \\
+\hline 3 & 30.65 & 5.93 \\
+\hline 4 & 30.65 & 5.93 \\
+\hline 5 & 30.60 & 5.96 \\
+%---------------------------DANE-------------------------------
+\hline
+\end{tabularx}
+
+\textbf{} \\
+
+\raggedright
+    {
+        {Dokładność wartości z pomiaru 1} \\
+        {$\Delta_1 = \pm0.05 mm$}\\
+        \textbf{ }\\
+        {Dokładność wartości z pomiaru 2} \\
+        {$\Delta_2 = \pm0.01 mm$}\\
+        \textbf{ }\\
+    }
+
+\pagebreak
+
+
+\centering
+
+\section*{ZAGADNIENIA TEORETYCZNE}
+
+\raggedright
+    {1. Wprowadzenie do pomiarów fizycznych:
+
+    - Pomiary fizyczne są podstawą eksperymentów naukowych i inżynierskich. Ich celem jest określenie wartości wielkości fizycznych z jak największą dokładnością.
+
+    - Rodzaje pomiarów: bezpośrednie (np. pomiar długości linijką) i pośrednie (np. obliczanie objętości na podstawie wymiarów). \\
+    2. Błędy pomiarowe:
+
+    - Błąd systematyczny: Wynika z nieprawidłowego działania przyrządu pomiarowego lub metody pomiarowej. Może być spowodowany np. nieprawidłową kalibracją narzędzia.
+
+    - Błąd przypadkowy: Wynika z niekontrolowanych czynników zewnętrznych, takich jak drgania, zmiany temperatury czy subiektywne odczyty.
+
+    - Błąd gruby: Wynika z pomyłki eksperymentatora, np. błędnego odczytu skali. \\
+    3. Narzędzia pomiarowe:
+
+    - Linijka: Proste narzędzie do pomiaru długości z dokładnością do 1 mm. Stosowane do pomiarów o niskiej precyzji.
+
+    - Suwmiarka: Narzędzie do pomiaru długości, średnic wewnętrznych i zewnętrznych z dokładnością do 0,05 mm.
+
+    - Śruba mikrometryczna: Precyzyjne narzędzie do pomiaru długości z dokładnością do 0,01 mm. Stosowane do pomiarów wymagających wysokiej precyzji. \\
+    4. Metody analizy danych pomiarowych:
+
+    - Średnia arytmetyczna: Uśrednienie wyników pomiarów w celu zmniejszenia wpływu błędów przypadkowych.
+
+    - Odchylenie standardowe: Miara rozproszenia wyników pomiarów wokół średniej.
+
+    - Niepewność pomiarowa: Określenie zakresu, w którym z określonym prawdopodobieństwem znajduje się prawdziwa wartość mierzonej wielkości. \\
+    \textbf{} \\
+    Bibliografia: \\
+    Halliday, D., Resnick, R., \& Walker, J. (2014). Fundamentals of Physics. Wiley.
+    Podstawy fizyki, w tym zagadnienia związane z pomiarami i błędami pomiarowymi.
+
+    PN-EN ISO 3611:2010. Śruby mikrometryczne -- Wymagania i badania.
+    Norma dotycząca wymagań i metod badania śrub mikrometrycznych.
+
+    PN-EN ISO 13385-1:2019. Suwmiarki -- Część 1: Wymagania i badania.
+    Norma dotycząca wymagań i metod badania suwmiarek.
+    }
+
+\textbf{} \\
+\centering
+
+\section*{OPIS DOŚWIADCZENIA}
+
+{Celem eksperymentu było porównanie dokładności i precyzji trzech narzędzi pomiarowych (linijka, suwmiarka, śruba mikrometryczna) poprzez wielokrotny pomiar długości trzech przedmiotów (walec, kostka, pierścień). Każdy przedmiot został zmierzony kilka razy za pomocą każdego narzędzia, a wyniki zapisano do dalszej analizy. Po przeprowadzeniu pomiarów obliczono średnie wartości, odchylenia standardowe oraz niepewności pomiarowe, aby ocenić dokładność i precyzję poszczególnych narzędzi, oraz potwierdzić hipotezę tego, że tym większą dokładność ma narzędzie, tym mniejsze będą błędy pomiarowe.}
+
+\section*{OPRACOWANIE WYNIKÓW POMIARÓW}
+
+{W eksperymencie zmierzono długość boków kostki, średnicy zewnętrznej i wewnętrznej pierścienia oraz średnicę i długość walca za pomocą linijki, suwmiarki i śruby mikrometrycznej (mikrometra), a następnie policzono pola/objętości tych przedmiotów. Pomiary zebrano celem porównania dokładności i precyzji narzędzi. Wyniki pomiarów zostały zamieszczone w trzech tabelach jako wstęp do sprawozdania. \\
+W przypadku kostki, zmierzone zostały jej boki za pomocą wszystkich trzech narzędzi. W przypadku pierścienia - średnica zewnętrzna i wewnętrzna za pomocą linijki i suwmiarki. Walec zaś był mierzony suwmiarką (długość) oraz mikrometrem (średnica). \\
+Podczas pomiarów zauważalnym wnioskiem był fakt tego, że tym niższy błąd pomiarowy narzędzia, tym bardziej dokładne były pomiary. W przypadku kostki obliczone zostały błędy dla pomiaru pośredniego - objętości obiektu. W przypadku linijki z dokładnością wynoszącą $\pm1mm$, odchylenie objętości wynosiło $\pm0.63cm^3$, czyli aż $22.9\%$ od średniej objętości.
+Suwmiarka i śruba mikrometryczna te błędy miały już dużo mniejsze. Odpowiednio dla suwmiarki (dokładność $\pm0.05mm$) - $\pm0.03cm^3$, czyli $0.99\%$, oraz dla śruby mikrometrycznej (dokładność $\pm0.01mm$) - $\pm0.02cm^3$, czyli $0.63\%$. \\
+Odchylenie liczone ze wzoru $\Delta V = \max(|V - V_{min}|, |V - V_{max}|)$, a procentowe odchylenie - $\frac{\Delta V}{V}*100\%$. \\
+W przypadku walca liczone było odchylenie standardowe wzorem $u(h) = \sqrt{\frac{1}{n(n-1)}\sum_{i=1}^{n}(h_i-h_{śr})^2}$ oraz $u(d) = \sqrt{\frac{1}{n(n-1)}\sum_{i=1}^{n}(d_i-d_{śr})^2}$. Odchylenie standardowe objętości walca zostało wyliczone z $u(V) = \sqrt{(\frac{\delta V}{\delta d})^2*u^2(d)+(\frac{\delta V}{\delta h})^2*u^2(h)}$. Wartości te wynosiły odpowiednio: \\$u(d) = 0.0018cm$; $u(h) = 0.0006cm$; $u(V) = 0.0013cm^3$. \\
+W przypadku pierścienia podobnie jak w przypadku kostki, policzone zostały pola pierścienia, ich odchylenia, oraz odchylenia procentowe. Pierścień był mierzony linijką oraz suwmiarką. Pole średnie dla linijki wynosi: $S = 1.13cm^2$, odchylenie: $\Delta S = 0.1cm^2$, a odchylenie procentowe: $\delta S = 8.84\%$. \\
+Dla suwmiarki zaś, wartości te wynoszą odpowiednio: $S = 1.26cm^2$; $\Delta S = 0.02cm^2$; $\delta S = 1.58\%$}\\
+
+
+\section*{WNIOSKI}
+
+{Na podstawie wykonanych pomiarów oraz obliczeń, możemy dojść do wniosku, że tym dokładniejsze narzędzie, tym mniejsze odchylenie oraz błąd pomiarowy. Dla narzędzia z największym błędem (linijka), odchylenia procentowe potrafiły dochodzić nawet do $22.9\%$, zaś w przypadku mikrometra i suwmiarki wartości te były dużo mniejsze. Odpowiednio $0.63\%$ i $0.99\%$ w przypadku pomiarów kostki. \\
+Na podstawie powyższej analizy można stwierdzić, że większa dokładność narzędzia przekłada się na mniejsze błędy pomiarowe, co potwierdza naszą hipotezę.} \\
+\end{document}
+
+
+%Dodatkowe uwagi:
+
+1. Sprawozdanie może być pisane ręcznie. Proszę jednak o czytelność pisma!!!
+
+2. Sprawozdanie MUSI zawierać wszystkie części (tabela pomiarową, teoria,
+przebieg ćwiczenia, obliczenia, niepewności, wnioski i wykresy). Brak
+jakiejkolwiek części kwalifikuje do zwrotu złożonego sprawozdania bez dalszego
+sprawdzania.
+
+3. Wykresy należy zamieszczać na osobnych kartkach (format A4). Wykonywać za
+pomocą komputera lub ręcznie na papierze milimetrowym. Należy tak dobrać
+skalę, aby wykres zajmował całą stronę.
+
+4. Punktów pomiarowych naniesionych na wykresach nie łączymy! W przypadku
+dopasowania prostej regresji, wraz punktami na wykresie należy nanieść prostą
+regresji.
+
+5. Na wykresach razem z punktami należy nanieść niepewności pomiarowe w formie
+tzw. krzyży niepewności pomiarowych.
+
+6. Do sprawozdania należy dołączyć kartkę pomiarową z ćwiczenia podpisaną przez
+prowadzącego.
+
+7. Przy zapisie wyników wraz z niepewnością obowiązuje zasada podawania 2 cyfr
+znaczących (instrukcja ONP).
+
+8. Niepewności pomiarowe w większości przypadków wyliczamy bazując na trzech
+metodach:
+a) gdy mamy pomiary skorelowane korzystamy z zależności 17 w instrukcji ONP,
+b) gdy mamy pomiary nieskorelowane korzystamy z zależności 15 w ONP,
+c) w przypadku dopasowywania prostych regresji, niepewności obliczamy ze
+wzorów 6 i 7 w ONP.
