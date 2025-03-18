@@ -15,4 +15,4 @@ W katalogu [Pomoce naukowe] znajdują się skrypty, notatki oraz inne materiały
 W katalogu [Wykresy] znajdują się wykresy wykonane z wykorzystaniem skryptów z katalogu [Pomoce naukowe]. Wykresy są zapisane w formacie .png.
 
 # Licencja
-Repozytorium jest dostępne na licencji [MIT](https://opensource.org/licenses/MIT). Oznacza to, że możesz dowolnie korzystać z materiałów zawartych w repozytorium, jednak nie możesz ich sprzedawać ani udostępniać jako swoje własne. Wszelkie prawa zastrzeżone.
+Repozytorium jest dostępne na licencji [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/). Oznacza to, że możesz dowolnie korzystać z materiałów zawartych w repozytorium, jednak nie możesz ich sprzedawać ani udostępniać jako swoje własne. Wszelkie prawa zastrzeżone.
